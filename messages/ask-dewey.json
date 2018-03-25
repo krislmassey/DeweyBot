@@ -1,0 +1,44 @@
+{
+    "messages1": [
+        "AFFIRMATIVE",
+        "NEGATIVE",
+        "PROCESSING...  yes!",
+        "PROCESSING...  no.",
+        "PROCESSING...  nope!",
+        "PROCESSING...  the answer remains unclear",
+        "PROCESSING...  indeed.",
+        "PROCESSING...  affirmative",
+        "PROCESSING...  I can confirm.",
+        "PROCESSING...  negative",
+        "PROCESSING...  quite the opposite.",
+        "Of course.",
+        "Certainly.",
+        "My sources indicate not.",
+        "NO!",
+        "F*** yeah",
+        "Apologies.  I will never tell.",
+        "Apologies.  I cannot say.",
+        "Indeed!",
+        "Why would you ask ME this?",
+        "In a word, yes.",
+        "Never.",
+        "A gentleman never tells",
+        "Yes",
+        "No.",
+        "Mmhmm.",
+        "Nope",
+        "I think so, but I cannot be sure."
+
+    ],
+    "errors1": [
+        "*ERROR:*  Please query again.",
+        "*ERROR:*  SEGFAULT",
+        "*ERROR:*  Query not understood.",
+        "*ERROR:*  Logic poorly defined."
+    ],
+    "raremessage": [
+        ".....  Perhaps it is not my place to say, but <@user-id>, do you not feel that you are becoming overreliant on me?  I would recommend doing some research and coming to a conclusion of your own.",
+        ".....  Apologies, but can we not do this right now?  I am in the middle of a rather large batch compilation and would prefer to focus my processing capabilities solely on that.",
+        "..................  Oh.  Oh Right.  Bee boo boo beep!.....  Sure.  Go nuts."
+    ]
+}

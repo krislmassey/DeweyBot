@@ -1,0 +1,13 @@
+{
+  "name": "Dewey",
+  "version": "1.0.0",
+  "description": "Baby's first IIRC bot",
+  "main": "bot.js",
+  "author": "chaotic_echo",
+  "dependencies": {
+    "dewey": "0.0.4",
+    "discord.io": "github:woor/discord.io#gateway_v6",
+    "git": "^0.1.5",
+    "winston": "^2.4.1"
+  }
+}
