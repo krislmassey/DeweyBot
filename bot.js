@@ -4,7 +4,7 @@ var ask_dewey = require('./messages/ask-dewey.json');
 
 
 var TESTMODE = false;
-var RELEASEMODE = false;
+var RELEASEMODE = true;
 var mention = '<@426826780465168384>';
  
 
