@@ -78,7 +78,7 @@ function sayYouDontKnow(user, userID, channelID, message, evt){
 }
 
 function parseMessage(user, userID, channelID, message, evt){
-    lowermessage = message.toLowerCase();
+    var lowermessage = message.toLowerCase();
     var args = message.split(' ');
 
     if(args[0] == mention) {
