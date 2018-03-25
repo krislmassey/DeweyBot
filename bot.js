@@ -1,10 +1,10 @@
-var Discord = require('discord.io');
 var logger = require('winston');
-var auth = require('./auth.json');
 var love_messages = require('./messages/i-love-you.json');
 var ask_dewey = require('./messages/ask-dewey.json');
 
+
 var TESTMODE = false;
+var RELEASEMODE = false;
 var mention = '<@426826780465168384>';
  
 
@@ -200,11 +200,22 @@ function parseMessage(user, userID, channelID, message, evt){
 
 
 //INIT BOT
-var bot = new Discord.Client({
-    token: auth.token,
-    autorun: true
-});
+if(RELEASEMODE){  //for heroku deployment
+    var Discord = require('discord.js');
+    var bot = new Discord.Client();
+    bot.login(process.env.TOKEN);
+}
+else {  //for test/local deployment
+    var Discord = require('discord.io');
+    var auth = require('./auth.json');
+    var bot = new Discord.Client({
+        token: auth.token,
+        autorun: true
+    });
+}
 
+
+//BOT EVENTS
 bot.on('ready', function (evt) {
     logger.info('INITIATING.  DEWEY IS NOW OPERATIONAL');
     logger.info('Logged in as: ');
